@@ -27,8 +27,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_msg = new System.Windows.Forms.TextBox();
             this.button_send = new System.Windows.Forms.Button();
+            this.txt_msg = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,13 +76,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "发送消息";
             // 
-            // txt_msg
-            // 
-            this.txt_msg.Location = new System.Drawing.Point(12, 44);
-            this.txt_msg.Name = "txt_msg";
-            this.txt_msg.Size = new System.Drawing.Size(169, 21);
-            this.txt_msg.TabIndex = 0;
-            // 
             // button_send
             // 
             this.button_send.Location = new System.Drawing.Point(53, 103);
@@ -93,6 +86,13 @@
             this.button_send.UseVisualStyleBackColor = true;
             this.button_send.Click += new System.EventHandler(this.button_send_Click);
             // 
+            // txt_msg
+            // 
+            this.txt_msg.Location = new System.Drawing.Point(12, 44);
+            this.txt_msg.Name = "txt_msg";
+            this.txt_msg.Size = new System.Drawing.Size(169, 21);
+            this.txt_msg.TabIndex = 0;
+            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -101,6 +101,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Client";
             this.Text = "客户端";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Client_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

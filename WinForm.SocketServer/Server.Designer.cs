@@ -31,6 +31,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.发送消息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.断开连接ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.发送文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,9 +94,11 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.发送消息ToolStripMenuItem});
+            this.发送消息ToolStripMenuItem,
+            this.断开连接ToolStripMenuItem,
+            this.发送文件ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
             // 
             // 发送消息ToolStripMenuItem
             // 
@@ -102,6 +106,20 @@
             this.发送消息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.发送消息ToolStripMenuItem.Text = "发送消息";
             this.发送消息ToolStripMenuItem.Click += new System.EventHandler(this.发送消息ToolStripMenuItem_Click);
+            // 
+            // 断开连接ToolStripMenuItem
+            // 
+            this.断开连接ToolStripMenuItem.Name = "断开连接ToolStripMenuItem";
+            this.断开连接ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.断开连接ToolStripMenuItem.Text = "断开连接";
+            this.断开连接ToolStripMenuItem.Click += new System.EventHandler(this.断开连接ToolStripMenuItem_Click);
+            // 
+            // 发送文件ToolStripMenuItem
+            // 
+            this.发送文件ToolStripMenuItem.Name = "发送文件ToolStripMenuItem";
+            this.发送文件ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.发送文件ToolStripMenuItem.Text = "发送文件";
+            this.发送文件ToolStripMenuItem.Click += new System.EventHandler(this.发送文件ToolStripMenuItem_Click);
             // 
             // Server
             // 
@@ -129,6 +147,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 发送消息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 断开连接ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 发送文件ToolStripMenuItem;
     }
 }
 
